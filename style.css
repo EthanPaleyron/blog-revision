@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1 {
+    margin: 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+main {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main .card {
+    margin: 0 auto 5rem;
+    border: solid 1px #000;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card p {
+    width: 10rem;
+    padding: 0 1rem;
+}
+
+main .card img {
+    width: 30rem;
+}
+
+main .content-article {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+main .content-article .images {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+main .content-article img {
+    width: 10rem;
+    height: 10rem;
+}
+
+main .content-article article {
+    background-color: #ededed;
+    height: 23rem;
+    padding: 6rem 3rem;
+}
+
+main .content-article article p {
+    margin: 2rem;
+}
+
+main .content-article article small {
+    display: block;
+    text-align: end;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    main .card p {
+        width: 100%;
+        padding: 1.5rem 0;
+    }
+
+    main .card img {
+        width: 20rem;
+    }
+
+    main .card {
+        flex-direction: column-reverse;
+    }
+
+    main .content-article article {
+        display: none;
+    }
+
+    main .content-article .images {
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+}
